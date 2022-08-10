@@ -1,55 +1,55 @@
-<p align="center"><img src="./public/logo/myem-black-2.png" height="200"></p>
 <br><br><br>
+<p align="center"><img src="./public/logo/myem-black-2.png" height="200"></p>
+<br>
 
 
 
 # About this Project
 
-### This project was created to practice and experience backend services of Google Firebase. For example, various services such as user authentication, No-SQL based database Firestore, and hosting services were used in this project. 
-<br>
+#### This project was created to practice and experience backend services of Google Firebase. For example, various services such as user authentication, No-SQL based database Firestore, and hosting services were used in this project. 
 
-### You can check the current progress of the project by accessing the site below.
-## [https://my-em-46948.web.app/](https://my-em-46948.web.app/)
+#### You can check the current progress of the project by accessing the site below.
+### [my-em-46948.web.app/](https://my-em-46948.web.app/)
 <br><br><br>
 
 
 
 # About Me
 
-### Name &nbsp; | &nbsp; Young-Woo Kim
-### Major &nbsp; | &nbsp; Hongik University Computer Engineering
-### Position &nbsp; | &nbsp; Frontend Engineer
+#### Name &nbsp; | &nbsp; Young-Woo Kim
+#### Major &nbsp; | &nbsp; Hongik University Computer Engineering
+#### Position &nbsp; | &nbsp; Frontend Engineer
 <br><br><br>
 
 
 
 # Technologies and Software Used
 
-### Programming Languages
+#### Programming Languages
 <p align="center">
 <img src="./public/software/javascript.png" height="60">
 </p>
 <br>
 
-### Frontend Server
+#### Frontend Server
 <p align="center">
 <img src="./public/software/react.png" height="60">
 </p>
 <br>
 
-### Backend Server
+#### Backend Server
 <p align="center">
 <img src="./public/software/firebase.png" height="60">
 </p>
 <br>
 
-### Deployment
+#### Deployment
 <p align="center">
 <img src="./public/software/firebase.png" height="60">
 </p>
 <br>
 
-### Version Control
+#### Version Control
 <p align="center">
 <img src="./public/software/git.png" height="60">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
