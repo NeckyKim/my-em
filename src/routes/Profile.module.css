@@ -1,0 +1,38 @@
+.profileContainer {
+    text-align: center;
+    margin-top: 200px;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(250, 50, 100);
+}
+
+.userEmail {
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(50, 50, 50);
+}
+
+.logoutButton {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    font-weight: 1000;
+    width: 300px;
+    height: 50px;
+    border: transparent;
+    border-radius: 25px;
+    background-color: rgb(250, 50, 100);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.logoutButton:hover {
+    background-color: rgb(250, 150, 150);
+    transition: 0.3s;
+}

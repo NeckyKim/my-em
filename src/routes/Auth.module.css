@@ -1,0 +1,215 @@
+.background {
+    background: linear-gradient(135deg, rgb(250, 200, 200) 10%, rgb(250, 50, 100) 90%);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.loginContainer {
+    display: block;
+    margin: auto;
+    margin-top: calc(50vh - 350px);
+    width: 500px;
+    height: 700px;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 50px;
+    border-radius: 15px 15px 0px 0px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+
+.inputZone {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    width: 400px;
+    height: 45px;
+    background-color: transparent;
+    border: transparent;
+    border-bottom: 2px solid rgb(250, 50, 100);
+    color: rgb(250, 50, 100);
+}
+
+.inputZone:focus {
+    outline: none;
+    border-bottom: 2px solid rgb(250, 150, 150);
+}
+
+.inputZone::placeholder {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1.2rem;
+    color: rgb(180, 180, 180);
+}
+
+.mainButton {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    font-weight: 1000;
+    width: 300px;
+    height: 50px;
+    border: transparent;
+    border-radius: 25px;
+    background-color: rgb(250, 50, 100);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.mainButton:hover {
+    background-color: rgb(250, 150, 150);
+    transition: 0.3s;
+}
+
+.errorMessage {
+    margin-bottom: 10px;
+    height: 30px;
+    font-weight: 1000;
+    color: rgb(250, 100, 100);
+}
+
+.toggleButton {
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+    width: fit-content;
+    margin: 0px auto;
+    color: rgb(250, 50, 100);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.toggleButton:hover {
+    color: rgb(250, 150, 150);
+    transition: 0.3s;
+}
+
+.toggleButtonBeside {
+    font-size: 1.6rem;
+    color: rgb(180, 180, 180);
+}
+
+.socialLoginComment {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    width: 230px;
+    margin: 0px auto;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+    color: rgb(0, 200, 250);
+    border-bottom: 1px solid rgb(180, 180, 180);
+}
+
+.googleButton {
+    margin: 0px auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 250px;
+    height: 45px;
+    padding: auto;
+    border: transparent;
+    border-radius: 30px;
+    background-color: rgb(230, 230, 230);
+    color: rgb(50, 50, 50);
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.googleButton:hover {
+    background-color: rgba(230, 230, 230, 0.8);
+    transition: 0.3s;
+}
+
+.facebookButton {
+    margin: 0px auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 250px;
+    height: 45px;
+    border: transparent;
+    border-radius: 30px;
+    background-color: rgb(25, 119, 243);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.facebookButton:hover {
+    background-color: rgba(25, 119, 243, 0.8);
+    transition: 0.3s;
+}
+
+.socialLoginIcon {
+    height: 24px;
+    margin-right: 15px;
+}
+
+
+
+@media screen and (max-width:800px) {
+    .loginContainer {
+        width: 80vw;
+        height: 80vh;
+        margin-top: 10vh;
+    }
+
+    .title {
+        font-size: 2rem;
+        padding-left: 5vw;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .inputZone {
+        width: 70vw;
+    }
+
+    .mainButton {
+        width: 50vw;
+    }
+
+    .toggleButton {
+        font-size: 1rem;
+    }
+
+    .toggleButtonBeside {
+        font-size: 1.2rem;
+    }
+
+    .googleButton {
+        width: 200px;
+        font-size: 0.9rem;
+    }
+
+    .facebookButton {
+        width: 200px;
+        font-size: 0.9rem;
+    }
+}
