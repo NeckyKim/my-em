@@ -1,5 +1,5 @@
 <br><br><br>
-<p align="center"><img src="./public/logo/myem-black-2.png" height="200"></p>
+<p align="center"><img src="./public/logo/myem-black-2.png" width="600" height="=200"></p>
 <br>
 
 
@@ -9,7 +9,7 @@
 #### This project was created to practice and experience backend services of Google Firebase. For example, various services such as user authentication, No-SQL based database Firestore, and hosting services were used in this project. 
 
 #### You can check the current progress of the project by accessing the site below.
-### [my-em-46948.web.app/](https://my-em-46948.web.app/)
+### [myem.site](https://myem.site/)
 <br><br><br>
 
 
