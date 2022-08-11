@@ -4,7 +4,7 @@ import { authService } from "../FirebaseModules";
 
 import { useState } from "react";
 import { useEffect } from "react";
-import styles from "./App.css"
+import "./App.css";
 
 
 

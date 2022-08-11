@@ -3,16 +3,16 @@ import { useState } from "react";
 
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { sendPasswordResetEmail } from "firebase/auth";
-import { sendEmailVerification } from "firebase/auth";
+// import { sendEmailVerification } from "firebase/auth";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { signInWithPopup } from "firebase/auth";
-import { sendSignInLinkToEmail } from "firebase/auth";
+// import { sendSignInLinkToEmail } from "firebase/auth";
 import { getAuth } from "firebase/auth";
 import { GoogleAuthProvider } from "firebase/auth";
 import { FacebookAuthProvider } from "firebase/auth";
 import { TwitterAuthProvider } from "firebase/auth";
-import { GithubAuthProvider } from "firebase/auth";
-import { authService } from "../FirebaseModules";
+// import { GithubAuthProvider } from "firebase/auth";
+// import { authService } from "../FirebaseModules";
 
 import styles from "./Auth.module.css"
 
@@ -257,7 +257,7 @@ function Auth() {
 
             {
                 !newAccount && !findPassword &&
-                <div>
+                <div className={styles.buttonsZone}>
                     <button
                         name="google"
                         onClick={onSocialClick}
@@ -269,7 +269,7 @@ function Auth() {
                             onClick={onSocialClick}
                             className={styles.socialLoginIcon}
                         />
-                            Google 로그인
+                        Google 로그인
                     </button>
 
                     <button
@@ -282,7 +282,7 @@ function Auth() {
                             src={process.env.PUBLIC_URL + "/auth/facebook.png"}
                             className={styles.socialLoginIcon}
                         />
-                            Facebook 로그인
+                        Facebook 로그인
                     </button>
                 </div>
             }

@@ -3,12 +3,14 @@ import { useState } from "react";
 
 import { dbService } from "../FirebaseModules";
 import { collection } from "firebase/firestore";
-import { doc } from "firebase/firestore";
+// import { doc } from "firebase/firestore";
 import { addDoc } from "firebase/firestore";
-import { getDocs } from "firebase/firestore";
+// import { getDocs } from "firebase/firestore";
 import { onSnapshot } from "firebase/firestore";
 import { query } from "firebase/firestore";
 import { orderBy } from "firebase/firestore";
+import { ref } from "firebase/storage";
+import { uploadString } from "firebase/storage";
 
 import Message from "../components/Message";
 
@@ -19,8 +21,8 @@ import styles from "./Home.module.css"
 function Home({ userObject }) {
     const [message, setMessage] = useState("");
     const [messages, setMessages] = useState([]);
-
     const [messageLength, setMessageLength] = useState(0);
+    const [attachment, setAttachment] = useState();
 
     useEffect(() => {
         const q = query(
@@ -53,9 +55,25 @@ function Home({ userObject }) {
     };
 
     const onChange = (event) => {
-        const { target: { name, value } } = event;
+        const { target: { value } } = event;
 
         setMessage(value);
+    }
+
+    const onFileChange = (event) => {
+        const { target: { files } } = event;
+        const theFile = files[0];
+
+        const reader = new FileReader();
+        reader.onloadend = (finishedEvent) => {
+            const { currentTarget: { result } } = finishedEvent;
+            setAttachment(result);
+        }
+        reader.readAsDataURL(theFile);
+    }
+
+    const onClearAttachment = () => {
+        setAttachment(null);
     }
 
 
@@ -75,6 +93,13 @@ function Home({ userObject }) {
                     className={styles.messageInputZone}
                     required
                 />
+
+                <input type="file" accept="image/*" onChange={onFileChange} />
+
+                <div>
+                    {attachment && <img src={attachment} width="50px" />}
+                    <button onClick={onClearAttachment}>Clear</button>
+                </div>
 
                 <input type="submit" value="전송" className={styles.messageSendButton} />
                 <br /><br />

@@ -21,7 +21,6 @@ function Message({ messageObject, isOwner }) {
 
         const ok = window.confirm("수정하시겠습니까?");
         const textRef = doc(dbService, "messages", `${messageObject.id}`);
-        const beforeMessage = messageObject.message;
 
         if (ok) {
             setIsEditing(false);
@@ -33,7 +32,7 @@ function Message({ messageObject, isOwner }) {
     }
 
     const onChange = (event) => {
-        const { target: { name, value } } = event;
+        const { target: { value } } = event;
 
         setNewMessage(value);
     }
