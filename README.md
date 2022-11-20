@@ -51,9 +51,9 @@
 
 #### Version Control
 <p align="center">
-<img src="./public/software/git.png" height="60">
+<img src="./public/software/git.png" height="50">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<img src="./public/software/github.png" height="60">
+<img src="./public/software/github.png" height="50">
 </p>
 <br><br><br>
 
